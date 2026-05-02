@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="NeonX Tools" android:key=""
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ─── Token Tools ─────────────────────────────────────────────── -->
+    <mods.preference.EmptyPreference android:title="Token Tools" />
+
+    <mods.preference.TokenExtractorPreference
+        android:title="Token Extractor"
+        android:summary="Instantly check your clipboard for a Discord user token, or view step-by-step instructions to find your token" />
+
+    <!-- ─── Custom RPC ───────────────────────────────────────────────── -->
+    <mods.preference.EmptyPreference android:title="Custom Rich Presence (RPC)" />
+
+    <SwitchPreference
+        android:title="Enable NeonX RPC"
+        android:key="neonx.rpc.enabled"
+        android:summary="Shows a custom 'NeonX Cord' Rich Presence on your profile when logged in via token"
+        android:defaultValue="true" />
+
+    <SwitchPreference
+        android:title="Show RPC for all logins"
+        android:key="neonx.rpc.always"
+        android:summary="If enabled, the custom RPC will show for all login methods, not just token logins"
+        android:defaultValue="false" />
+
+    <!-- ─── Server Onboarding ────────────────────────────────────────── -->
+    <mods.preference.EmptyPreference android:title="Server Onboarding" />
+
+    <SwitchPreference
+        android:title="Auto-Complete Onboarding"
+        android:key="neonx.auto.onboarding"
+        android:summary="Automatically selects and submits all onboarding options when you join a server — no manual setup needed"
+        android:defaultValue="true" />
+
+    <!-- ─── Footer ───────────────────────────────────────────────────── -->
+    <mods.preference.EmptyPreference android:title="NeonX Cord — Built for speed 🔴" />
+
+</PreferenceScreen>
